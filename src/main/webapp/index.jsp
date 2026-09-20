@@ -1,3 +1,4 @@
+<%@ page import="com.tictactoe.entity.Sign" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -28,8 +29,8 @@
     </tr>
 </table>
 <hr>
-<c:set var="CROSSES" value="<%=com.tictactoe.Sign.CROSS%>"/>
-<c:set var="NOUGHTS" value="<%=com.tictactoe.Sign.NOUGHT%>"/>
+<c:set var="CROSSES" value="<%=Sign.CROSS%>"/>
+<c:set var="NOUGHTS" value="<%=Sign.NOUGHT%>"/>
 
 <c:if test="${winner == CROSSES}">
     <h1>CROSSES WIN!</h1>
@@ -57,6 +58,5 @@
         });
     }
 </script>
-
 </body>
 </html>

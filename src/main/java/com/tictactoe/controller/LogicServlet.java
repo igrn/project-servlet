@@ -71,7 +71,8 @@ public class LogicServlet extends HttpServlet {
         return (Field) fieldAttribute;
     }
 
-    private boolean checkWin(HttpServletResponse response, HttpSession currentSession, Field field) throws IOException {
+    private boolean checkWin(HttpServletResponse response,
+                             HttpSession currentSession, Field field) throws IOException {
         Sign winner = field.checkWin();
         if (Sign.CROSS == winner || Sign.NOUGHT == winner) {
             currentSession.setAttribute("winner", winner);
