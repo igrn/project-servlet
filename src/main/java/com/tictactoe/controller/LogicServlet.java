@@ -1,4 +1,7 @@
-package com.tictactoe;
+package com.tictactoe.controller;
+
+import com.tictactoe.entity.Field;
+import com.tictactoe.entity.Sign;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

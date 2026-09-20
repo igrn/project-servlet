@@ -1,4 +1,4 @@
-package com.tictactoe;
+package com.tictactoe.controller;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
